@@ -18,6 +18,7 @@ func main()  {
 	app.Version = Version
 
 	app.Usage = `Google Spreadsheet like join
+
 	Example1 echo "test\ntest\ntest | gs-join -d ","
 	test,test,test
 
