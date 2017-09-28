@@ -1,5 +1,6 @@
 # gs-join
 Google Spreadsheet like join.
+https://support.google.com/docs/answer/3094077
 
 # Description
 
