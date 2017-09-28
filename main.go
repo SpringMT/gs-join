@@ -18,8 +18,10 @@ func main()  {
 	app.Version = Version
 
 	app.Usage = `Google Spreadsheet like join
-	Example $ echo "foo:aaa\tbar:bbb" | lltsv -k foo,bar
-	foo:aaa   bar:bbb
+	Example1 echo "test\ntest\ntest | gs-join -d ","
+	test,test,test
+
+	Example2 $ gs-join -d "," file1 file2
 	`
 	app.Flags = []cli.Flag{
 		cli.StringFlag{
