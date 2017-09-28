@@ -49,6 +49,30 @@ GLOBAL OPTIONS:
    --version, -v                print the version
 ```
 
+## ToDo
+
+1. write tests
+
+## Build
+
+To build, use go get and make
+
+```
+$ go get -d github.com/SpringMT/gs-join
+$ cd $GOPATH/src/github.com/SpringMT/gs-join
+$ make
+```
+
+To release binaries, I use [gox](https://github.com/mitchellh/gox) and [ghr](https://github.com/tcnksm/ghr)
+
+```
+go get github.com/mitchellh/gox
+go get github.com/tcnksm/ghr
+
+mkdir -p pkg && cd pkg && gox ../...
+ghr vX.Y.Z .
+```
+
 ## Contribution
 
 1. Fork (https://github.com/SpringMT/gs-join)
