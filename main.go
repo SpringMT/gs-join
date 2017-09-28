@@ -15,10 +15,11 @@ var exitCode = 0
 func main()  {
 	app := cli.NewApp()
 	app.Name = "gs-join"
-	app.Version = "1"
+	app.Version = Version
 
-	app.Usage = `test
-	test
+	app.Usage = `Google Spreadsheet like join
+	Example $ echo "foo:aaa\tbar:bbb" | lltsv -k foo,bar
+	foo:aaa   bar:bbb
 	`
 	app.Flags = []cli.Flag{
 		cli.StringFlag{
