@@ -5,7 +5,7 @@ https://support.google.com/docs/answer/3094077
 # Description
 
 ```
-Example1 echo "test\ntest\ntest | gs-join -d ","
+Example1 echo "test\ntest\ntest" | gs-join -d ","
 test,test,test
 
 Example2 $ gs-join -d "," file1 file2
